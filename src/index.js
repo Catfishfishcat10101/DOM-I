@@ -38,3 +38,12 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
     "accent-img": "http://localhost:9000/img/accent.png",
   },
 };
+
+const logoImg = document.querySelector('#logo-img')
+logoImg.src = siteContent.images['logo-img']
+
+const ctaImg = document.querySelector('#cta-img')
+ctaImg.src = siteContent.images['cta-img']
+
+const midImg = document.querySelector('#middle-img')
+midImg.setAttribute('src', siteContent.images['accent-img'])
