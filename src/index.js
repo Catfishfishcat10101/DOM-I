@@ -39,7 +39,19 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+//NAV LINKS
+const navLinks = document.querySelectorAll('header nav a')
+const navLinkTexts = Object.values(siteContent['nav'])
+navLinks.forEach((link, idx) => {
+  link.textContent = navLinkTexts[idx]
+  link.classList.add('italic')
+})
 
+
+
+//CTA
+document.querySelector('.cta .cta-text h1').textContent = siteContent['cta']['h1']
+document.querySelector('.cta .cta-text button').textContent = siteContent['cta']['button']
 
 
 //TOP CONTENT
@@ -49,10 +61,8 @@ topContent.children[0].children[1].textContent = siteContent['main-content']['fe
 topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4']
 topContent.children[1].children[1].textContent = siteContent['main-content']['about-content']
 
-
 const midImg = document.querySelector('#middle-img')
 midImg.setAttribute('src', siteContent.images['accent-img'])
-
 
 //BOTTOM CONTENT
 const bottomContent = document.querySelector('.bottom-content')
@@ -62,10 +72,6 @@ bottomContent.children[1].children[0].textContent = siteContent['main-content'][
 bottomContent.children[1].children[1].textContent = siteContent['main-content']['product-content']
 bottomContent.children[2].children[0].textContent = siteContent['main-content']['vision-h4']
 bottomContent.children[2].children[1].textContent = siteContent['main-content']['vision-content']
-console.log(bottomContent)
-
-
-
 
 
 //CONTACT
