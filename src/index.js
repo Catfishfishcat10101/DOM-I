@@ -67,3 +67,14 @@ topContent.children[0].children[0].textContent = siteContent['main-content']['fe
 topContent.children[0].children[1].textContent = siteContent['main-content']['features-content']
 topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4']
 topContent.children[1].children[1].textContent = siteContent['main-content']['about-content']
+
+//BOTTOM CONTENT
+const bottomContent = document.querySelector('.bottom-Content')
+const h4sBottom = document.querySelectorAll('h4')
+h4sBottom[0].textContent = siteContent['main-content']['services-h4']
+h4sBottom[1].textContent = siteContent['main-content']['product-h4']
+h4sBottom[2].textContent = siteContent['main-content']['vision-h4']
+const psBottom = document.querySelectorAll('p')
+psBottom[0].textContent = siteContent['main-content']['services-content']
+psBottom[1].textContent = siteContent['main-content']['product-content']
+psBottom[2].textContent = siteContent['main-content']['vision-content']
